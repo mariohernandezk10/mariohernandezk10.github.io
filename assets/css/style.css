@@ -120,6 +120,10 @@ div a {
     color: whitesmoke;
 }
 
+.contactInfo {
+    font-size: 1.5rem;
+}
+
 /* I wanted to add a class to each individual div so I can move
 them but I didn't have to I just put
 display: flex;
