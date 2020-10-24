@@ -1,0 +1,163 @@
+/* add some kind of border on your name */
+:root {
+    --main-blue: rgb(63, 125, 233)
+}
+
+/* I didnt use the clearfix class but I could have if I wanteed to, I wrote it in line instead */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+html {
+    font-size: 62.5%;
+    background-image: url(https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=markus-spiske-qjnAnF0jIGk-unsplash.jpg);
+    background-size: 100%;
+}
+
+body {
+    margin: 0 0 0 0;
+}
+/* .about-me {
+    border: solid blue 1px;
+} */
+
+h3 {
+    color: darkgreen;
+    text-align: left;
+    font-size: 3rem;
+    font-family: serif;
+    width: 79%;
+}
+
+.topnavleft {
+    display: inline;
+    position: relative;
+    left: 0%;
+}
+
+.topnavright {
+    display: inline;
+    position: absolute;
+    right: 0%;
+}
+
+.container {
+    height: 500px;
+}
+
+section {
+    border-radius: 20px 20px 20px 20px;
+    width: auto;
+    text-align: center;
+    margin: 80px;
+    background: linear-gradient(90deg, lightCyan, skyBlue); filter: opacity(100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* im not sure why the blur didn'work?? maybe I dont need to. I JUST WANT TO BE ABLE TO SEE THE WORDS */
+}
+
+.about-me h2 {
+    color: darkgreen;
+    text-align: center;
+    font-size: 5rem;
+    float: left;
+    width: 100%;
+}
+
+nav a {
+    font-size: 5rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.776);
+}
+
+.wrapper {
+    clear: both;
+    margin-bottom: 200px;
+}
+
+img {
+    width: 17%;
+    height: auto;
+    /* margin-left: 25px;
+    margin-right: 25px; */
+    filter: saturate(120%) brightness(120%);
+    border-radius: 50px 50px 50px 50px;
+    position: relative;
+    margin: 25px 25px 5px 25px;
+}
+
+.left {
+    float: left;
+}
+
+/* how to take off the margins so that the border is touching the very edge*/
+
+.footer-container {
+    background: gray;
+    margin-bottom: 0%;
+    width: 100%;
+    border: gray;
+    border-style: solid;
+    height: 75px;
+    font-size: 2.5rem;
+}
+
+.footer-style {
+    font-family: "Helvetica Neue" , Arial, sans-serif;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+div a {
+    text-decoration: wavy;
+    color: whitesmoke;
+}
+
+/* I wanted to add a class to each individual div so I can move
+them but I didn't have to I just put
+display: flex;
+    justify-content: space-evenly;
+inside the parent class */
+
+/* .foot-div1 {
+    display: flex;
+    align-items: center;
+}
+
+.foot-div2 {
+    justify-content: space-between;
+}
+
+.foot-div3 {
+    justify-content: space-between;
+} */
+
+
+@media screen and (max-width: 992px) {
+    a {
+        font-size: 4rem;
+        width: 100%;
+    }
+    /* Change the header color */
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    /* Change the header color */
+    header {
+      background: #8ac4ff;
+    }
+  }
