@@ -148,7 +148,7 @@ inside the parent class */
     }
   }
 
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 600px) {
       html {
           font-size: 20%;
       }
