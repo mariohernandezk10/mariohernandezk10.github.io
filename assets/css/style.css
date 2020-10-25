@@ -1,14 +1,7 @@
 /* add some kind of border on your name */
 :root {
-    --main-blue: rgb(63, 125, 233)
+    /* is there anything I could add here? */
 }
-
-/* I didnt use the clearfix class but I could have if I wanteed to, I wrote it in line instead */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
 html {
     font-size: 62.5%;
@@ -19,9 +12,6 @@ html {
 body {
     margin: 0 0 0 0;
 }
-/* .about-me {
-    border: solid blue 1px;
-} */
 
 h3 {
     color: darkgreen;
@@ -80,8 +70,6 @@ nav a {
 img {
     width: 17%;
     height: auto;
-    /* margin-left: 25px;
-    margin-right: 25px; */
     filter: saturate(120%) brightness(120%);
     border-radius: 50px 50px 50px 50px;
     position: relative;
@@ -91,8 +79,6 @@ img {
 .left {
     float: left;
 }
-
-/* how to take off the margins so that the border is touching the very edge*/
 
 .footer-container {
     background: gray;
@@ -149,10 +135,6 @@ inside the parent class */
         font-size: 4rem;
         width: 100%;
     }
-    /* Change the header color */
-    header {
-      background: #772014;
-    }
   }
   
   /* Cards are stacked on top of each other at 768px or smaller */
@@ -164,4 +146,32 @@ inside the parent class */
     header {
       background: #8ac4ff;
     }
+  }
+
+  @media screen and (max-width: 390px) {
+      html {
+          font-size: 20%;
+      }
+
+      section {
+          height: 100%;
+          width: auto;
+      }
+
+      h3 {
+          font-size: 4rem;
+      }
+
+      img {
+          width: 50%;
+          height: auto;
+      }
+
+      .container {
+          height: 550px;
+      }
+
+      .left {
+          margin-left: 20px;
+      }
   }
